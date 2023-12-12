@@ -28,3 +28,10 @@ Item.belongsTo(User, {
 
 
 module.exports = { User, Group, Item };
+
+
+
+
+
+
+// This is a comment
