@@ -30,13 +30,24 @@ User.init(
     },
     group_id: {
       type: DataTypes.INTEGER,
-    },
+      references: {
+        model: 'group',
+        key: 'id',
+    }
+  },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         len: [7],
       },
+    },
+    bio: {
+      type: DataTypes.STRING,
+    },
+    
+    hasBeenChosen: {
+      type: DataTypes.BOOLEAN,
     },
   },
   {
