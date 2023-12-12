@@ -22,3 +22,9 @@ User.hasMany(Item, {
 Item.belongsTo(User, {
   foreignKey: 'user_id'
 });
+
+
+
+
+
+module.exports = { User, Group, Item };
