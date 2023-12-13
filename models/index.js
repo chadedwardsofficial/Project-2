@@ -1,11 +1,11 @@
 const User = require('./User');
-const Group = require('./Group');
+// const Group = require('./Group');
 const Item = require('./Item');
 
 
-Group.hasMany(User, {
-  foreignKey: 'group_id',
-});
+// Group.hasMany(User, {
+//   foreignKey: 'group_id',
+// });
 
 
 
@@ -27,7 +27,7 @@ Item.belongsTo(User, {
 
 
 
-module.exports = { User, Group, Item };
+module.exports = { User, Item };
 
 
 
