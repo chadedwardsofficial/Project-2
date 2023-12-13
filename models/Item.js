@@ -28,7 +28,7 @@ Item.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'item',
   }
 );
 
