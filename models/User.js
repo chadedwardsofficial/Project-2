@@ -28,12 +28,12 @@ User.init(
         isEmail: true,
       },
     },
-  //   group_id: {
-  //     type: DataTypes.INTEGER,
-  //     references: {
-  //       model: 'group',
-  //       key: 'id',
-  //   }
+    // group_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'group',
+    //     key: 'id',
+    // }
   // },
     password: {
       type: DataTypes.STRING,
