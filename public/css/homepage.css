@@ -1,0 +1,35 @@
+body {
+  background-image: url(../photos/homepage/backgroundimage2.jpeg);
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 400px;
+  margin: 50px auto; 
+  overflow: hidden; 
+  background-image: url('../photos/homepage/homepagediv1.jpeg');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 15px; 
+  padding: 20px; 
+}
+
+
+
+
+.div1 p {
+  font-family: 'Rouge Script', cursive;
+  font-size: 68px;
+  color: white;
+}
+
+.div1:hover {
+  filter: brightness(80%) contrast(120%); /* Darken the card on hover */
+}
