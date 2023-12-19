@@ -6,12 +6,7 @@ router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const itemData = await Item.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+      include: [ User ],
     });
 
     // Serialize data so the template can read it
@@ -19,8 +14,7 @@ router.get('/', async (req, res) => {
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-        items, 
-      logged_in: req.session.logged_in 
+        items
     });
   } catch (err) {
     res.status(500).json(err);

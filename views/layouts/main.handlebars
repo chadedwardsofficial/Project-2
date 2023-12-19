@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Secret Santa</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script:wght@600&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/a9fefa5a38.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="flex-column justify-space-around">
+   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <a href="/">Secret Santa</a>
+        <a class="logo" href="/">Secret Santa</a><img src="/Project-2/public/IMG/santa-hat-1087651_1280.png" alt="santa hat" width="100" height="120">
       </h1>
-      <nav>
+      <nav class="nav">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">Profile</a> |
+        <a href="/profile" data-replace="Profile"><span><i class="fa-solid fa-sleigh" style="color: #ff0000;"></i></span></a>
         <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login"id="style-2" style="font-size: 30px;" data-replace="Login"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a>
         {{/if}}
       </nav>
     </header>
@@ -28,6 +31,7 @@
     </main>
     <footer>
     </footer>
+  </div>
   </div>
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
