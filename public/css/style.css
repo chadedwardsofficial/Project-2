@@ -1,127 +1,73 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F2F2F2; /* Muted light gray background */
-    color: #333; /* Muted dark gray text color */
-  }
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  .justify-space-around {
-    justify-content: space-around;
-  }
-  .display-flex {
-    display: flex;
-  }
-  .justify-space-between {
-    justify-content: space-between;
-  }
-  .align-center {
-    align-items: center;
-  }
-  .p-2 {
-    padding: 1rem;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .mt-5 {
-    margin-top: 5rem;
-  }
-  /* Header Styles */
-  header {
-    background-color: #C0C0C0; /* Muted light gray for header background */
-  }
-  header h1 a {
-    text-decoration: none;
-    color: #CC0000; /* Muted Red for the title */
-  }
-  nav a {
-    text-decoration: none;
-    color: #008000; /* Muted Green for nav links */
-    margin:
+  font-family: 'Arial', sans-serif;
+
+  margin: 0;
+}
+.navbarHeader {
+  font-family: 'Rouge Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  height: 5vh;
+  display:flex;
+  justify-content: space-between;
+}
+.navbarContainer a {
+font-size: 45px;
+}
+
+
+.nav {
+  padding-top:20px;
+  padding-right: 15px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+header {
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #D9534F; /* Muted Red on hover */
+}
+nav a {
+  margin-right: 10px;
+}
+button.no-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* color: #333; */
+}
+button.no-button:hover {
+  color: #5CB85C; /* Muted Green on hover */
+}
+
+
+
+
+
+/* Additional styles for the hover effect on buttons */
+button:hover,
+button.no-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
   
-  React
-  
-  Reply
-  
-  4:49
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F0F0F0;
-    margin: 0;
-  }
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  .justify-space-around {
-    justify-content: space-around;
-  }
-  .display-flex {
-    display: flex;
-  }
-  .justify-space-between {
-    justify-content: space-between;
-  }
-  .align-center {
-    align-items: center;
-  }
-  .p-2 {
-    padding: 1rem;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .mt-5 {
-    margin-top: 5rem;
-  }
-  header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  a:hover {
-    color: #D9534F; /* Muted Red on hover */
-  }
-  nav a {
-    margin-right: 10px;
-  }
-  button.no-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
-  }
-  button.no-button:hover {
-    color: #5CB85C; /* Muted Green on hover */
-  }
-  main {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  /* Additional styles for the hover effect on buttons */
-  button:hover,
-  button.no-button:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
+
+
