@@ -22,7 +22,7 @@ console.log(users);
     res.status(500).json(err);
   }
 });
-
+//error no handlebars exist
 router.get('/item/:id', async (req, res) => {
   try {
     const itemData = await Item.findByPk(req.params.id, {
@@ -64,6 +64,21 @@ router.get('/profile', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get('/profile/:name',async (req,res) => {
+  //get other users profile page
+  try {
+    const userData = await User.findOne({where:{name:req.params.name}, include:[{model:Item}]})
+    const user = userData.get({ plain: true });
+    res.render('usersProfilePage',{
+      ...user
+    })
+    // res.json(userData)
+  } catch (error) {
+    
+  }
+})
+
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
