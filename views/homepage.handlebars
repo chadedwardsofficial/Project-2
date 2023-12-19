@@ -1,19 +1,67 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./public/css/homepage.css">
-  <title>HomePage</title>
-</head>
-<body>
-  <a href="/login">
-  <div class="div1">
-    <p>Begin Your Season With a Bang</p>
-  </div>
-  </a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/homepage.css"/>
+    <title>HomePage</title>
+  </head>
+  <body>
+    <div class="homePageContainer">
+      <div class="introText">
+        <p>
+          Discover the magic of giving back! Dive into the holiday spirit on our
+          Secret Santa website for a festive experience like no other!
+        </p>
+      </div>
+      <div class="howToSignUp">
+        <div class="card" id="signUpCard">
+          <p>Sign Up!</p>
+          <br />
+          <a href="/login">
+            <i class="fa-solid fa-user" style="color: #67866b"></i>
+          </a>
+        </div>
+        <div class="card" id="makeAlistCard">
+          <p>Make a List!</p>
+          <br />
+          <i class="fa-solid fa-scroll" style="color:#67866b"></i>
+        </div>
+        <div class="card" id="getMatchedCard">
+          <p>Get Matched!</p>
+          <br />
+          <i class="fa-solid fa-gift" style="color: #67866b"></i>
+        </div>
+      </div>
+      <div class="usersRendered">
+        <div class="aboveTextUsers">
+          <p>
+            Meet your Secret Santa Crew! Browse through fellow participants
+            below and join the festive fun!
+          </p>
+        </div>
+        <div>
+          {{#each users as |user index|}}
+          {{!-- {{#unless (gte index 8)}} --}}
+          <div class="users">
+          <a href="/{{user.id}}">
+            <i class="fa-solid fa-candy-cane" style="color: #e20303;"></i> <span>{{user.name}}</span>
+            </a>
+            </div>
+
+          {{!-- {{/unless}} --}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/620809e3a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

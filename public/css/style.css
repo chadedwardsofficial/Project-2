@@ -1,27 +1,24 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #F0F0F0;
+
   margin: 0;
 }
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-.justify-space-around {
-  justify-content: space-around;
-}
-.display-flex {
-  display: flex;
-}
-.justify-space-between {
+.navbarHeader {
+  font-family: 'Rouge Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  height: 5vh;
+  display:flex;
   justify-content: space-between;
 }
-.align-center {
-  align-items: center;
+.navbarContainer a {
+font-size: 45px;
 }
-.p-2 {
-  padding: 1rem;
+
+
+.nav {
+  padding-top:20px;
+  padding-right: 15px;
 }
 .container {
   max-width: 1200px;
@@ -31,12 +28,13 @@ body {
   margin-top: 5rem;
 }
 header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 h1 {
   font-size: 1.5rem;
-  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 a {
   text-decoration: none;
@@ -52,22 +50,16 @@ button.no-button {
   background: none;
   border: none;
   cursor: pointer;
-  color: #333;
+  /* color: #333; */
 }
 button.no-button:hover {
   color: #5CB85C; /* Muted Green on hover */
 }
-main {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
+
+
+
+
+
 /* Additional styles for the hover effect on buttons */
 button:hover,
 button.no-button:hover {
