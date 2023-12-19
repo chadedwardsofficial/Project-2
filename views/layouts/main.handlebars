@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Secret Santa</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marck+Script:wght@600&display=swap" rel="stylesheet">
- <script src="https://kit.fontawesome.com/a9fefa5a38.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   <div class="flex-column justify-space-around">
+  <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
         <a class="logo" href="/">Secret Santa</a><img src="/Project-2/public/IMG/santa-hat-1087651_1280.png" alt="santa hat" width="100" height="120">
       </h1>
-      <nav class="nav">
+      <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/profile" data-replace="Profile"><span><i class="fa-solid fa-sleigh" style="color: #ff0000;"></i></span></a>
@@ -25,17 +30,17 @@
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
+    <main>
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-    </footer>
-  </div>
+
   </div>
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+  
 </body>
+
 </html>
