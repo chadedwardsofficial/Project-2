@@ -65,6 +65,21 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+router.get('/profile/:name',async (req,res) => {
+  //get other users profile page
+  try {
+    const userData = await User.findOne({where:{name:req.params.name}, include:[{model:Item}]})
+    const user = userData.get({ plain: true });
+    res.render('usersProfilePage',{
+      ...user
+    })
+    // res.json(userData)
+  } catch (error) {
+    
+  }
+})
+
+
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
