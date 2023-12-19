@@ -22,7 +22,7 @@ console.log(users);
     res.status(500).json(err);
   }
 });
-
+//error no handlebars exist
 router.get('/item/:id', async (req, res) => {
   try {
     const itemData = await Item.findByPk(req.params.id, {
