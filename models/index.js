@@ -3,12 +3,6 @@ const User = require('./User');
 const Item = require('./Item');
 
 
-// Group.hasMany(User, {
-//   foreignKey: 'group_id',
-// });
-
-
-
 
 User.hasMany(Item, {
   foreignKey: 'user_id',

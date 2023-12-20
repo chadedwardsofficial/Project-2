@@ -15,12 +15,6 @@
                 Save
                 <i class="material-icons right">send</i>
             </button>
-            <h6>Allergies:</h6>
-            <p id="allergies" contenteditable="true">Any allergies?</p>
-            <button class="btn waves-effect waves-light" type="submit" name="action" id="saveAllergiesButton" disabled>
-                Save
-                <i class="material-icons right">send</i>
-            </button> 
             <br>
             <a class="waves-effect waves-light btn modal-trigger" href="#chosenPersonModal">Chosen Person</a>
             <div id="chosenPersonModal" class="modal">
@@ -42,15 +36,24 @@
                         <label for="input_text">item name:</label>
                         <input class="form-input" type="text" id="input_text" name="item-name" data-length="10">
                     </div>
-                    <div class="form-group">
-                        <label for="textarea2">description:</label>
-                        <textarea class="form-input materialize-textarea" id="textarea2" name="item-desc" data-length="120"></textarea>
-                    </div>
+                    
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Create</button>
                     </div>
                 </form>
             </div>
             
+ <div>
+    {{#each items as |item index|}}
+          {{!-- {{#unless (gte index 8)}} --}}
+        <div class="items">
+             <span>{{item.name}}</span>
+        </div>
+
+          {{!-- {{/unless}} --}}
+    {{/each}}
+        </div>
+
+
         </div>
     </div>
