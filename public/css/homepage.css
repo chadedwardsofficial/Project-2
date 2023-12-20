@@ -66,7 +66,7 @@ a {
 }
 
 .usersGoHere {
-  background-color: #f9efd15b;
+  background-color:#f9efd15b; /* Change to your preferred shade of white */
   border: 2px solid #d4aa49;
   border-radius: 15px;
   font-family: "Rouge Script", cursive;
@@ -76,8 +76,50 @@ a {
   width: 100%;
   height: 65%;
   margin: 3px;
-  overflow-y: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #d4aa49 #ffffff; /* Firefox */
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff; /* Adjust to match the background color */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4aa49;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b1873e;
+  }
 }
+
+  /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f9efd15b !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #5f8761 !important;
+    border-radius: 6px !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #281e0d !important;
+  }
+
+
 
 .users {
   display: flex;
@@ -85,3 +127,4 @@ a {
   justify-content: center;
   align-items: center;
 }
+
