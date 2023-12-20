@@ -30,6 +30,13 @@ a {
   /* border: 1px  solid black; */
   width: 40%;
 }
+.howToSignUp i {
+  font-size: 40px;
+}
+.howToSignUp .card i {
+  transition: font-size 0.3s ease, box-shadow 0.3s ease; 
+
+}
 .card {
   font-family: "Rouge Script", cursive;
   font-size: 40px;
@@ -37,12 +44,12 @@ a {
 }
 .card p {
   color: #d4aa49;
-  font-size: 35px;
+  font-size: 65px;
   /* font-weight: bold; */
 }
 .card i {
   padding-top: 100px;
-  font-size: 12px;
+  font-size: 100px;
 }
 
 .usersRendered {
@@ -119,6 +126,10 @@ a {
     background: #281e0d !important;
   }
 
+  .howToSignUp .card:hover i {
+    font-size: 115px; /* Set the size you want when hovering */
+   
+  }
 
 
 .users {
