@@ -1,146 +1,103 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d6d4d4; /* Muted light gray background */
-    color: #333; /* Muted dark gray text color */
-  }
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-
- 
-  .p-2 {
-    padding: 1rem;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .mt-5 {
-    margin-top: 5rem;
-  }
-  /* Header Styles */
-  header {
-    
-    background-image: url(/Project-2/public/IMG/y2019-10-03-13_generated.jpg);
-  }
-
-  
-  .logo {
-    font-family: 'Marck Script', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    text-decoration: none;
-    color: #660909; /* Muted Red for the title */
-  }
-
-  
-
-  nav a {
-   color: #F83D3A; /* Muted Green for nav links */
-  }
+  font-family: 'Arial', sans-serif;
+}
+.navbarHeader {
+  display:flex;
+  justify-content: center;
+  font-family: 'Rouge Script', cursive;
+  font-weight: bold;
+  font-size: 60px;
+  color: #c31717; /* Muted Red for the title */
+}
 
 
+.navbarContainer {
+  display: flex;
+  justify-content:space-between;
+  width: 10%;
+  font-family: 'Rouge Script', cursive;
+  overflow: hidden;
+  position: relative;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
 
-  body {
-    font-family: 'Marck Script';
-    background-color: #F0F0F0;
-    margin: 0;
-  }
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /*header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }*/
-  
+nav a::before,
+nav a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 5px;
+}
+nav a::before {
+  height: 5px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+nav a::after {
+  content: attr(data-replace);
+  height: 100%;
+  font-weight:bold;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #b2a292;
+}
 
-  .logo:hover {
-    color: #D9534F; /* Muted Red on hover */
-    text-shadow: 5px 5px 20px #ff9b9b;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-  }
-  .nav {
-    margin-right: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    width: 80px;
-    height: 40px;
-    text-decoration: none;
-  }
+nav a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+nav a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+nav a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+nav a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+ header h1 a {
+  text-decoration: none;
+  color: #333;
+}
+ header h1 a:hover {
+  color: #D9534F; /* Muted Red on hover */
+  text-shadow: 5px 5px 20px #797878;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   
-  a::before,
-  a::after {
-   content: '';
-    position: absolute;
-    width: 100%;
-    left: 0px;
-  }
-  a::before {
-    background-color: #ff0000;
-    height: 2px;
-    bottom: 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  a::after {
-    content: attr(data-replace);
-    height: 100%;
-    top: 0;
-    transform-origin: 100% 50%;
-    transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #065a1a;
-  }
+}
+
+button.no-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* color: #333; */
+}
+button.no-button:hover {
+  color: #5CB85C; /* Muted Green on hover */
+}
+
+
+
+
+
+/* Additional styles for the hover effect on buttons */
+button:hover,
+button.no-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
   
-  a:hover::before {
-    transform-origin: 0% 50%;
-    transform: scaleX(1);
-  }
-  a:hover::after {
-    transform: translate3d(0, 0, 0);
-  }
-  
-  a span {
-    display: inline-block;
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  
-  a:hover span {
-    transform: translate3d(-200%, 0, 0);
-  }
-  button.no-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #000000;
-  }
-  button.no-button:hover {
-    color: #5CB85C; /* Muted Green on hover */
-  }
-  
-  /* Additional styles for the hover effect on buttons */
-  button:hover,
-  button.no-button:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
