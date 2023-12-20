@@ -28,13 +28,7 @@ User.init(
         isEmail: true,
       },
     },
-    // group_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'group',
-    //     key: 'id',
-    // }
-  // },
+  
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -43,8 +37,17 @@ User.init(
       },
     },
 
+    chosenPerson:{
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+
     hasBeenChosen: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.BOOLEAN, 
+
       defaultValue: false
     },
   },
