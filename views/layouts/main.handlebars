@@ -10,7 +10,7 @@
    
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/homepage.css"/>
-  <link rel="stylesheet" href="/css/login.css"/>
+  {{!-- <link rel="stylesheet" href="/css/login.css"/> --}}
   <link rel="stylesheet" href="/css/profile.css"/>
 </head>
 
@@ -27,7 +27,7 @@
         <a href="/profile">Profile</a> |
         <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" id="loginButton">Login</a>
         {{/if}}
       </nav>
     </header>

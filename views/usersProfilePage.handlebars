@@ -7,8 +7,10 @@
             Wishlist:
         </h2>
         <ul>
-            {{#each items }}
-            <li>{{items.name}}</li>
+            {{#each items as |item index|}}
+
+             <li>{{item.name}}</li>
+
             {{/each}}
         </ul>
     </div>

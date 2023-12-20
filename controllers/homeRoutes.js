@@ -54,14 +54,21 @@ router.get('/profile', withAuth, async (req, res) => {
       include: [{ model: Item }],
     });
 
+    const chosenPersonData = await User.findByPk(userData.chosenPerson, {
+      attributes: { exclude: ['password'] },
+    });
+console.log(chosenPersonData)
     const user = userData.get({ plain: true });
-
+    const chosenUser = chosenPersonData ? chosenPersonData.get({ plain: true }): null;
+console.log(user)
     res.render('profile', {
       ...user,
+      chosenUser,
       logged_in: true
     });
   } catch (err) {
     res.status(500).json(err);
+    console.log(err);
   }
 });
 
