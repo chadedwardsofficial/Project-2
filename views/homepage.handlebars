@@ -41,21 +41,20 @@
       <div class="usersRendered">
         <div class="aboveTextUsers">
           <p>
-            Meet your Secret Santa Crew! Browse through fellow participants
-            below and join the festive fun!
+            Meet your Secret Santa Crew! 
           </p>
         </div>
-        <div>
+        <div class="usersGoHere">
+     
           {{#each users as |user index|}}
-          {{!-- {{#unless (gte index 8)}} --}}
+         
           <div class="users">
           <a href="/{{user.id}}">
             <i class="fa-solid fa-candy-cane" style="color: #e20303;"></i> <span>{{user.name}}</span>
             </a>
             </div>
-
-          {{!-- {{/unless}} --}}
           {{/each}}
+      
         </div>
       </div>
     </div>

@@ -58,4 +58,29 @@ router.post('/logout', (req, res) => {
   }
 });
 
+
+router.get('/profile', (req, res) => {
+  const names = User.findAll({
+    where: {hasBeenChosen : false}
+    })
+    res.json(names);
+
+  
+
+
+
+
+
+}
+);
+
+
+
+
+
+
+
+
+
+
 module.exports = router;

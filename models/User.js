@@ -42,12 +42,10 @@ User.init(
         len: [7],
       },
     },
-    bio: {
-      type: DataTypes.STRING,
-    },
 
     hasBeenChosen: {
       type: DataTypes.BOOLEAN,
+      defaultValue: false
     },
   },
   {
