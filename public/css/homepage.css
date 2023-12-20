@@ -1,7 +1,8 @@
 body {
   background-image: url(../photos/homepage/backgroundimage2.jpeg);
-  background-size: cover;
-  background-repeat: none;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
 }
 a {
   text-decoration: none;
@@ -82,8 +83,6 @@ border-radius: 15px;
   margin-right: 5px;
   margin-bottom: 5px;
  background-color: #f9efd15b;;
-  /* margin-top: 65px; */
-  /* font-weight: bold; */
   font-family: "Rouge Script", cursive;
   font-size: 55px;
   width: 100%;
@@ -170,4 +169,121 @@ background-image: url(../photos/homepage/cardsnowfalling.gif);
 
 .usersGoHere .users:hover span {
   color: #67866b; /* Sage green color */
+}
+
+@media (max-width: 1440px){
+  body {
+    background-size: cover; /* or background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+}
+
+
+@media (max-width: 1024px){
+  .howToSignUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    width: 90%; /* Adjust the width as needed */
+    margin: auto;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the container */
+   margin: auto; 
+   height: 200px;
+  }
+  .card i {
+    margin-bottom: 90px;
+    margin-left: 30px;
+  }
+  .usersRendered {
+    display: flex;
+    flex-direction: column;
+  margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../photos/homepage/backgroundimage2.jpeg);
+    background-size:cover;
+  }
+  .howToSignUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    width: 90%; /* Adjust the width as needed */
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the container */
+   margin: auto; 
+   height: 200px;
+  }
+  .card i {
+    margin-bottom: 90px;
+    margin-left: 30px;
+  }
+  .usersRendered {
+    display: flex;
+    flex-direction: column;
+  margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+}
+
+@media (max-width: 375px) {
+  .introText{
+    font-size: 35px;
+  }
+
+  .howToSignUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    width: 90%; /* Adjust the width as needed */
+    margin: auto;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the container */
+   margin: auto; 
+   height: 200px;
+  }
+  .card i {
+    margin-bottom: 90px;
+    margin-left: 30px;
+  }
+  .usersRendered {
+    display: flex;
+    flex-direction: column;
+  margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+  .aboveTextUsers{
+    font-size: 30px;
+  }
+
 }
