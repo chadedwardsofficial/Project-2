@@ -43,8 +43,20 @@ User.init(
       },
     },
 
+    bio: {
+      type: DataTypes.STRING,
+    },
+    chosenPerson:{
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+
     hasBeenChosen: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.BOOLEAN, 
+
       defaultValue: false
     },
   },

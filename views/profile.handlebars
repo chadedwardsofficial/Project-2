@@ -1,0 +1,58 @@
+  <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+    <div class="col s12 m6 ">
+        <div class="profile-container">
+            <i class="medium material-icons circle red-text text-lighten-1">account_circle</i>
+            <h3 id="name">Welcome {{name}}</h3>
+            {{#if chosenPerson }}
+            <h4 class="renderedChosenName">
+                {{chosenUser.name}}
+            </h4>
+            {{else}}
+            <br>
+            <a class="waves-effect waves-light btn modal-trigger" href="#chosenPersonModal" id="secretSantaBtn">Chosen Person</a>
+            <div id="chosenPersonModal" class="modal">
+                <div class="modal-content">
+                    <h4 id="modalPersonName">Chosen Person: <span id="personID"></span></h4>
+                    <p>Visit chosen person's page</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    <a href="#" class="waves-effect waves-green btn-flat" id="visitPageButton">Visit Page</a>
+                </div>
+            </div>
+            {{/if}}
+
+            <h5>Add to your Wishlist!</h5>
+            <div class="col s12 m6 ">
+                <form class="form new-item-form profile-container">
+                    <div class="form-group">
+                        <label for="input_text">item name:</label>
+                        <input class="form-input" type="text" id="input_text" name="item-name" data-length="10">
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </form>
+            </div>
+            
+ <div>
+    {{#each items as |item index|}}
+          {{!-- {{#unless (gte index 8)}} --}}
+        <div class="items">
+             <span>{{item.name}}</span>
+        </div>
+
+          {{!-- {{/unless}} --}}
+    {{/each}}
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="/js/profile.js"></script>
+        </div>
+    </div>
