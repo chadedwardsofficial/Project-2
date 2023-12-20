@@ -16,8 +16,9 @@ a {
 }
 
 .introText {
+  background-image: url(../photos/homepage/snowfallgif.gif);
   font-family: "Rouge Script", cursive;
-  font-size: 37px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -53,6 +54,7 @@ border-radius: 15px;
   width: 30%;
   height: 100%;
   border-radius: 25px;
+  transition: transform .8s ease;
 }
 .card p {
   color: #d4aa49;
@@ -147,7 +149,11 @@ border-radius: 15px;
 
   .howToSignUp .card:hover i {
     font-size: 115px; /* Set the size you want when hovering */
+
    
+  }
+  .howToSignUp .card:hover {
+background-image: url(../photos/homepage/cardsnowfalling.gif);
   }
 
 
