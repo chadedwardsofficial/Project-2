@@ -48,6 +48,7 @@ nav a::after {
   color: #b2a292;
 }
 
+
 nav a:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
@@ -65,8 +66,23 @@ nav a:hover span {
 }
 
  header h1 a {
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+a:link{
+  color: #D9534F;
+}
+a:visited{
+  color: #D9534F;
+}
+a {
+
   text-decoration: none;
-  color: #333;
+  color: #2c2c2c;
+  
 }
  header h1 a:hover {
   color: #D9534F; /* Muted Red on hover */
