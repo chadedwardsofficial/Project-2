@@ -13,6 +13,7 @@ body {
 
 .navbarContainer {
   display: flex;
+  justify-content: center;
   justify-content:space-between;
   width: 10%;
   font-family: 'Rouge Script', cursive;
@@ -22,6 +23,7 @@ body {
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  box-shadow: none;
 }
 
 nav a::before,

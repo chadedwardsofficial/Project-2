@@ -1,15 +1,17 @@
-<div>
-    <h1>
+<div class="wishlist">
+    <h1 class="userPageName">
         {{name}}'s page
     </h1>
-    <div>
+
+    
+    <div class="list">
         <h2>
             Wishlist:
         </h2>
         <ul>
             {{#each items as |item index|}}
 
-             <li>{{item.name}}</li>
+             <li> {{item.name}}</li>
 
             {{/each}}
         </ul>
