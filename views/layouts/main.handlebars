@@ -7,42 +7,29 @@
   <title>Secret Santa</title>
    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
-      rel="stylesheet"/>
-   <script src="https://kit.fontawesome.com/a9fefa5a38.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha256-a52hPh1W1JdH6xG6FdL5mV3dGcmyiLCEtoUKw6TfLY=" crossorigin="anonymous"></script>
-
-
-   
-
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"rel="stylesheet"/>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/homepage.css"/>
-  {{!-- <link rel="stylesheet" href="/css/login.css"/> --}}
   <link rel="stylesheet" href="/css/profile.css"/>
+  {{!-- <link rel="stylesheet" href="/css/login.css"/> --}}
+  
 </head>
 
 <body>
-  
-    <header >
+  <nav class="navbarContainer">
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile" style="font-size: 40px;" data-replace="Profile"><span><i class="fa-solid fa-sleigh" style="font-size: 40px;" ></i></span></a>
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+        <a href="/login" style="font-size: 40px;" data-replace="Login"><span><i class="fa-solid fa-user" style="color: #8c0303;"></i></span></a>
+        {{/if}}
+      
       <div class="navbarHeader">
       <h1>
         <a href="/" style="font-size: 80px;">Secret Santa</a>
       </h1>
-      </header>
-      <nav class="navbarContainer">
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile" style="font-size: 40px;" data-replace="Profile"><span><i class="fa-solid fa-sleigh"></i></span></a>
-        <button class="no-button" id="logout">Logout</button>
-        {{else}}
-
-        <a href="/login" style="font-size: 40px;" data-replace="Login"><span><i class="fa-solid fa-user" style="color: #8c0303;"></i></span></a>
-
-      
-
-        {{/if}}
+      </div>
       </nav>
     
     <main>
@@ -50,12 +37,13 @@
       {{{ body }}}
     </main>
 
-  </div>
+  
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  
-</body>
 
+  <script src="https://kit.fontawesome.com/a9fefa5a38.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha256-a52hPh1W1JdH6xG6FdL5mV3dGcmyiLCEtoUKw6TfLY=" crossorigin="anonymous"></script> 
+ </body>
 </html>
