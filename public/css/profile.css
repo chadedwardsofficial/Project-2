@@ -88,16 +88,21 @@ h5, h6{
 .items{
     color: #f4d5a9;
     font-family: 'marck-script', cursive;
+   
+}
+.itemList{
+    overflow-y: scroll;
 }
 
-#description,
-#allergies,
+
+
 .form-input,
 .card-description {
-    color: rgb(97, 97, 97);
+    color: #f3e9da;
     font-style: italic;
     cursor: text;
     text-align: start;
+    font-family: 'marck-script', cursive;
     
 }
 
@@ -179,6 +184,7 @@ label {
 .list h2 {
     font-size: 3.5em;
     padding: 2rem;
+    color: #a73030;
 }
 
 
@@ -186,6 +192,8 @@ label {
     list-style:none;
     padding: 25px;
     margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .list li {
@@ -198,6 +206,7 @@ label {
     padding: 25px;
     font-size: 2rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
