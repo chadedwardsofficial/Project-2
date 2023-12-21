@@ -1,6 +1,8 @@
 body {
   background-image: url(../photos/homepage/backgroundimage2.jpeg);
-  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
 }
 a {
   text-decoration: none;
@@ -15,73 +17,273 @@ a {
 }
 
 .introText {
+  background-image: url(../photos/homepage/snowfallgif.gif);
   font-family: "Rouge Script", cursive;
-  font-size: 37px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 200px;
   text-align: center;
   align-items: center;
-  /* border: 1px solid black; */
-  width: 100%;
+border-radius: 15px;
+  width: 70%;
+  height: 300px;
+
 }
 .howToSignUp {
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px  solid black; */
-  width: 40%;
+ height: 50%;
+  width: 55%;
+}
+.howToSignUp i {
+  font-size: 40px;
+}
+.howToSignUp .card i {
+  transition: font-size 0.3s ease, box-shadow 0.3s ease; 
+
 }
 .card {
   font-family: "Rouge Script", cursive;
   font-size: 40px;
   text-align: center;
+  box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.7);
+  border: 2px solid #d4aa49;
+  width: 30%;
+  height: 100%;
+  border-radius: 25px;
+  transition: transform .8s ease;
 }
 .card p {
   color: #d4aa49;
-  font-size: 35px;
+  font-size: 65px;
   /* font-weight: bold; */
 }
 .card i {
   padding-top: 100px;
-  font-size: 12px;
+  font-size: 100px;
 }
 
 .usersRendered {
   display: flex;
+  flex-direction: column;
+  height: 50%;
   width: 40%;
   flex-wrap: wrap;
+  margin-right: 15px;
 }
 .aboveTextUsers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000000;
   margin-right: 5px;
+  margin-bottom: 5px;
  background-color: #f9efd15b;;
-  margin-top: 65px;
-  font-weight: bolder;
   font-family: "Rouge Script", cursive;
-  font-size: 65px;
+  font-size: 55px;
   width: 100%;
-  height: 20%;
+  height: 12%;
   text-align: center;
-  border: 4px solid #d4aa49;
+  border: 2px solid #d4aa49;
   border-radius: 10px;
 }
 
 .usersGoHere {
-  background-color: #f9efd15b;
+  background-color:#f9efd15b; /* Change to your preferred shade of white */
   border: 2px solid #d4aa49;
   border-radius: 15px;
   font-family: "Rouge Script", cursive;
-  font-size: 30px;
+  font-size: 50px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 65%;
+  height: 85%;
   margin: 3px;
-  overflow-y: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #d4aa49 #ffffff; /* Firefox */
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff; /* Adjust to match the background color */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4aa49;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b1873e;
+  }
 }
+
+  /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f9efd15b !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #5a7d5d !important;
+    border-radius: 6px !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #281e0d !important;
+  }
+
+  .howToSignUp .card:hover i {
+    font-size: 115px; /* Set the size you want when hovering */
+
+   
+  }
+  .howToSignUp .card:hover {
+background-image: url(../photos/homepage/cardsnowfalling.gif);
+  }
+
 
 .users {
   display: flex;
-  width: 50%;
-  justify-content: center;
+  width: 40%;
+  font: 25px;
+  padding: auto;
+  margin-top: 30px;
+  margin-left: 75px;
+  justify-content: start;
   align-items: center;
+}
+
+.usersGoHere .users:hover span {
+  color: #67866b; /* Sage green color */
+}
+
+@media (max-width: 1440px){
+  body {
+    background-size: cover; /* or background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+}
+
+
+@media (max-width: 1024px){
+  .howToSignUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    width: 90%; /* Adjust the width as needed */
+    margin: auto;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the container */
+   margin: auto; 
+   height: 200px;
+  }
+  .card i {
+    margin-bottom: 90px;
+    margin-left: 30px;
+  }
+  .usersRendered {
+    display: flex;
+    flex-direction: column;
+  margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../photos/homepage/backgroundimage2.jpeg);
+    background-size:cover;
+  }
+  .howToSignUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    width: 90%; /* Adjust the width as needed */
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the container */
+   margin: auto; 
+   height: 200px;
+  }
+  .card i {
+    margin-bottom: 90px;
+    margin-left: 30px;
+  }
+  .usersRendered {
+    display: flex;
+    flex-direction: column;
+  margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+}
+
+@media (max-width: 375px) {
+  .introText{
+    font-size: 35px;
+  }
+
+  .howToSignUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    width: 90%; /* Adjust the width as needed */
+    margin: auto;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the container */
+   margin: auto; 
+   height: 200px;
+  }
+  .card i {
+    margin-bottom: 90px;
+    margin-left: 30px;
+  }
+  .usersRendered {
+    display: flex;
+    flex-direction: column;
+  margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+  .aboveTextUsers{
+    font-size: 30px;
+  }
+
 }
