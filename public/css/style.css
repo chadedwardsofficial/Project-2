@@ -10,20 +10,18 @@ body {
 }
 
 .navbarContainer {
-  display: flex;
-
   display: inline-block;
+  vertical-align: top;
+  padding: 10px;
   height: 35%;
   width: 100%;
   background-color: transparent;
   margin-top: 5px;
   position:relative;
-
   justify-content: center;
   justify-content:space-between;
   width: 10%;
   font-family: 'Rouge Script', cursive;
-
   overflow: hidden;
   padding-left: 10px;
   -moz-transition: all 0.3s ease-in;
