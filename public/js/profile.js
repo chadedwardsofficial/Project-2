@@ -5,11 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const modalElems = document.querySelectorAll(".modal");
   const modalInstances = M.Modal.init(modalElems, {});
-if(visitPageButton){
-  visitPageButton.addEventListener("click", function () {
-    window.location.href = "https://example.com"; // Replace with the actual URL
-  });
-}
+
 });
 
 const newFormHandler = async (event) => {
