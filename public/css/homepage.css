@@ -2,7 +2,8 @@ body {
   background-image: url(../photos/homepage/backgroundimage2.jpeg);
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat; background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a {
   text-decoration: none;
@@ -28,25 +29,23 @@ a {
   margin-bottom: 200px;
   text-align: center;
   align-items: center;
-border-radius: 15px;
+  border-radius: 15px;
   width: 70%;
   height: 300px;
-
 }
 .howToSignUp {
   display: flex;
   justify-content: space-evenly;
- height: 50%;
+  height: 50%;
   width: 55%;
 }
 .howToSignUp i {
   font-size: 40px;
 }
-.howToSignUp .card i {
-  transition: font-size 0.3s ease, box-shadow 0.3s ease; 
-
+.howToSignUp .cardd i {
+  transition: font-size 0.3s ease, box-shadow 0.3s ease;
 }
-.card {
+.cardd {
   font-family: "Rouge Script", cursive;
   font-size: 40px;
   text-align: center;
@@ -55,14 +54,14 @@ border-radius: 15px;
   width: 30%;
   height: 100%;
   border-radius: 25px;
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
 }
-.card p {
+.cardd p {
   color: #d4aa49;
   font-size: 65px;
   /* font-weight: bold; */
 }
-.card i {
+.cardd i {
   padding-top: 100px;
   font-size: 100px;
 }
@@ -82,7 +81,7 @@ border-radius: 15px;
   color: #000000;
   margin-right: 5px;
   margin-bottom: 5px;
- background-color: #f9efd15b;;
+  background-color: #f9efd15b;
   font-family: "Rouge Script", cursive;
   font-size: 55px;
   width: 100%;
@@ -93,7 +92,7 @@ border-radius: 15px;
 }
 
 .usersGoHere {
-  background-color:#f9efd15b; /* Change to your preferred shade of white */
+  background-color: #f9efd15b; /* Change to your preferred shade of white */
   border: 2px solid #d4aa49;
   border-radius: 15px;
   font-family: "Rouge Script", cursive;
@@ -128,33 +127,30 @@ border-radius: 15px;
   }
 }
 
-  /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
-  ::-webkit-scrollbar {
-    width: 12px !important;
-  }
+/* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px !important;
+}
 
-  ::-webkit-scrollbar-track {
-    background: #f9efd15b !important;
-  }
+::-webkit-scrollbar-track {
+  background: #f9efd15b !important;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #5a7d5d !important;
-    border-radius: 6px !important;
-  }
+::-webkit-scrollbar-thumb {
+  background: #5a7d5d !important;
+  border-radius: 6px !important;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #281e0d !important;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #281e0d !important;
+}
 
-  .howToSignUp .card:hover i {
-    font-size: 115px; /* Set the size you want when hovering */
-
-   
-  }
-  .howToSignUp .card:hover {
-background-image: url(../photos/homepage/cardsnowfalling.gif);
-  }
-
+.howToSignUp .cardd:hover i {
+  font-size: 115px;
+}
+.howToSignUp .cardd:hover {
+  background-image: url(../photos/homepage/cardsnowfalling.gif);
+}
 
 .users {
   display: flex;
@@ -168,19 +164,18 @@ background-image: url(../photos/homepage/cardsnowfalling.gif);
 }
 
 .usersGoHere .users:hover span {
-  color: #67866b; /* Sage green color */
+  color: #67866b;
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
   body {
-    background-size: cover; /* or background-size: 100% 100%; */
-  background-repeat: no-repeat;
-  background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
-
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .howToSignUp {
     display: flex;
     justify-content: center;
@@ -189,34 +184,31 @@ background-image: url(../photos/homepage/cardsnowfalling.gif);
     width: 90%; /* Adjust the width as needed */
     margin: auto;
   }
-  .card {
+  .cardd {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; /* Take up the full width of the container */
-   margin: auto; 
-   height: 200px;
+    margin: auto;
+    height: 200px;
   }
-  .card i {
+  .cardd i {
     margin-bottom: 90px;
     margin-left: 30px;
   }
   .usersRendered {
     display: flex;
     flex-direction: column;
-  margin: auto;
+    margin: auto;
     width: 90%;
     flex-wrap: wrap;
-  
   }
 }
-
-
 
 @media (max-width: 768px) {
   body {
     background-image: url(../photos/homepage/backgroundimage2.jpeg);
-    background-size:cover;
+    background-size: cover;
   }
   .howToSignUp {
     display: flex;
@@ -227,30 +219,29 @@ background-image: url(../photos/homepage/cardsnowfalling.gif);
     margin: auto;
   }
 
-  .card {
+  .cardd {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; /* Take up the full width of the container */
-   margin: auto; 
-   height: 200px;
+    margin: auto;
+    height: 200px;
   }
-  .card i {
+  .cardd i {
     margin-bottom: 90px;
     margin-left: 30px;
   }
   .usersRendered {
     display: flex;
     flex-direction: column;
-  margin: auto;
+    margin: auto;
     width: 90%;
     flex-wrap: wrap;
-  
   }
 }
 
 @media (max-width: 375px) {
-  .introText{
+  .introText {
     font-size: 35px;
   }
 
@@ -262,28 +253,26 @@ background-image: url(../photos/homepage/cardsnowfalling.gif);
     width: 90%; /* Adjust the width as needed */
     margin: auto;
   }
-  .card {
+  .cardd {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; /* Take up the full width of the container */
-   margin: auto; 
-   height: 200px;
+    margin: auto;
+    height: 200px;
   }
-  .card i {
+  .cardd i {
     margin-bottom: 90px;
     margin-left: 30px;
   }
   .usersRendered {
     display: flex;
     flex-direction: column;
-  margin: auto;
+    margin: auto;
     width: 90%;
     flex-wrap: wrap;
-  
   }
-  .aboveTextUsers{
+  .aboveTextUsers {
     font-size: 30px;
   }
-
 }
