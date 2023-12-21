@@ -1,15 +1,86 @@
 [
-    {
-    "name":"Nintendo"
-    },
-    {
-    "name":"Nintendo2"
-    },
-    {
-    "name":"Nintendo3"
-    },
-    {
-    "name":"Nintendo4"
-    }
-
+  {
+    "name": "Game-boy"
+  },
+  {
+    "name": "Cozy Blanket"
+  },
+  {
+    "name": "Vanilla Candle"
+  },
+  {
+    "name": "Bicycle"
+  },
+  {
+    "name": "Smartphone"
+  },
+  {
+    "name": "Wireless Earbuds"
+  },
+  {
+    "name": "Coffee Maker"
+  },
+  {
+    "name": "Fitness Tracker"
+  },
+  {
+    "name": "E-Reader"
+  },
+  {
+    "name": "Digital Camera"
+  },
+  {
+    "name": "Gaming Console"
+  },
+  {
+    "name": "Smartwatch"
+  },
+  { "name": "Instant Pot" },
+  { "name": "Bluetooth Speaker" },
+  { "name": "Wireless Charging Pad" },
+  { "name": "Air Fryer" },
+  { "name": "Puzzle Set" },
+  { "name": "Kindle" },
+  { "name": "Electric Toothbrush" },
+  { "name": "Headphones" },
+  { "name": "Cookware Set" },
+  { "name": "Desk Organizer" },
+  { "name": "Aromatherapy Diffuser" },
+  { "name": "Robotic Vacuum Cleaner" },
+  { "name": "Portable Power Bank" },
+  { "name": "Sneakers" },
+  { "name": "Smart Thermostat" },
+  { "name": "Yoga Mat" },
+  { "name": "Handheld Massager" },
+  { "name": "Gourmet Chocolate Box" },
+  { "name": "Subscription to a Streaming Service" },
+  { "name": "Graphic Novels Collection" },
+  { "name": "Wireless Mouse" },
+  { "name": "Gift Card to a Favorite Store" },
+  { "name": "Travel Backpack" },
+  { "name": "HD Webcam" },
+  { "name": "Indoor Plants" },
+  { "name": "Fancy Water Bottle" },
+  { "name": "Board Game Set" },
+  { "name": "Ski Gear" },
+  { "name": "Fitness Apparel" },
+  { "name": "Cookbook by a Favorite Chef" },
+  { "name": "Smart Doorbell" },
+  { "name": "Bluetooth Headset" },
+  { "name": "Tool Kit" },
+  { "name": "Scented Bath Bombs" },
+  { "name": "Digital Drawing Tablet" },
+  { "name": "Customized Jewelry" },
+  { "name": "Weekend Getaway Voucher" },
+  { "name": "Camping Gear" },
+  { "name": "Designer Sunglasses" },
+  { "name": "Wine Tasting Experience" },
+  { "name": "Desk Lamp" },
+  { "name": "Educational Online Course" },
+  { "name": "Sleeping Bag" },
+  { "name": "Vintage Vinyl Records" },
+  { "name": "Ergonomic Office Chair" },
+  { "name": "Smart Indoor Garden" },
+  { "name": "Handheld Game Console" },
+  { "name": "Wireless Printer" }
 ]
