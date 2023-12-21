@@ -5,16 +5,15 @@ body {
   display:flex;
   justify-content: center;
   font-family: 'Rouge Script', cursive;
-  font-weight: bold;
-  font-size: 60px;
   color: #c31717; /* Muted Red for the title */
 }
 
 
 .navbarContainer {
-  display: flex;
+  display: block;
   justify-content:space-between;
-  width: 10%;
+  height: 200px;
+  width: 30%;
   font-family: 'Rouge Script', cursive;
   overflow: hidden;
   position: relative;
@@ -65,7 +64,10 @@ nav a:hover span {
   transform: translate3d(-200%, 0, 0);
 }
 
-
+.no-button{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 h1 {
   font-size: 1.5rem;
