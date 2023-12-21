@@ -1,6 +1,4 @@
-body {
-  font-family: "Arial", sans-serif;
-}
+
 
 .navbarHeader {
   display: flex;
@@ -10,9 +8,9 @@ body {
 }
 
 .navbarContainer {
-  display: flex;
-
   display: inline-block;
+  vertical-align: top;
+  padding: 10px;
   height: 35%;
   width: 100%;
   background-color: transparent;
@@ -21,7 +19,7 @@ body {
 
   justify-content: center;
   justify-content:space-between;
-  width: 10%;
+
   font-family: 'Rouge Script', cursive;
 
   overflow: hidden;
