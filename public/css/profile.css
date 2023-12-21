@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    /* background-color: #cadcd6;  */
+
 }
 h1{
    font-size: 5rem; 
@@ -95,10 +95,7 @@ h5, h6{
     color: #ffffff; 
     font-size: 4rem;
 }
-.nav{
-    background-color: transparent;
-   box-shadow: none;
-}
+
 
 .itemForm{
     text-align: center;
