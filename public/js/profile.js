@@ -32,13 +32,13 @@ const secretSantaBtn = async (event) => {
   const response = await fetch("/api/users/profile");
   const data = await response.json();
 
-  const nameDisplayed = document.querySelector("#personID");
+  const nameDisplayed = document.querySelector("#modalPersonName");
   if (data.message) {
     nameDisplayed.textContent = "Seems like all our users have been chosen";
   } else {
     nameDisplayed.textContent = data.name;
     const nameOnPage = document.querySelector('.renderedChosenName')
-    nameOnPage.textContent = 'Your chosen person: ' + data.name;
+    nameOnPage.textContent = 'Your chosen person:' + data.name;
 
   }
   console.log(data);
