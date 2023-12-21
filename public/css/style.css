@@ -1,24 +1,29 @@
-body {
-  font-family: 'Arial', sans-serif;
-}
+
+
 .navbarHeader {
-  display:flex;
+  display: flex;
   justify-content: center;
-  font-family: 'Rouge Script', cursive;
-  font-weight: bold;
-  font-size: 60px;
+  font-family: "Rouge Script", cursive;
   color: #c31717; /* Muted Red for the title */
 }
 
-
 .navbarContainer {
-  display: flex;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  height: 35%;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 5px;
+  position:relative;
+
   justify-content: center;
   justify-content:space-between;
-  width: 10%;
+
   font-family: 'Rouge Script', cursive;
+
   overflow: hidden;
-  position: relative;
+  padding-left: 10px;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -28,7 +33,7 @@ body {
 
 nav a::before,
 nav a::after {
- content: '';
+  content: "";
   position: absolute;
   width: 100%;
   left: 5px;
@@ -38,18 +43,16 @@ nav a::before {
   bottom: 0;
   transform-origin: 100% 50%;
   transform: scaleX(0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 nav a::after {
   content: attr(data-replace);
   height: 100%;
-  font-weight:bold;
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
   color: #b2a292;
 }
-
 
 nav a:hover::before {
   transform-origin: 0% 50%;
@@ -60,7 +63,7 @@ nav a:hover::after {
 }
 nav a span {
   display: inline-block;
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 nav a:hover span {
@@ -68,47 +71,37 @@ nav a:hover span {
 }
 
 
-
-h1 {
-  font-size: 1.5rem;
-  margin-top: 15px;
-  margin-left: 15px;
+a:link {
+  color: #d9534f;
 }
-a:link{
-  color: #D9534F;
-}
-a:visited{
-  color: #D9534F;
+a:visited {
+  color: #d9534f;
 }
 a {
-
   text-decoration: none;
   color: #2c2c2c;
-  
 }
- header h1 a:hover {
-  color: #D9534F; /* Muted Red on hover */
+ h1 a:hover {
+  color: #d9534f; /* Muted Red on hover */
   text-shadow: 5px 5px 20px #797878;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  
 }
 
-button.no-button {
+.no-button {
+  display: flex;
+  font-family: "Rouge Script", cursive;
   background: none;
+  font-size: 40px;
   border: none;
   cursor: pointer;
-  /* color: #333; */
 }
+
 button.no-button:hover {
-  color: #5CB85C; /* Muted Green on hover */
+  color: #b2a292; /* Muted Green on hover */
 }
-
-
-
-
 
 /* Additional styles for the hover effect on buttons */
 button:hover,
@@ -116,6 +109,3 @@ button.no-button:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
-
-
-  
