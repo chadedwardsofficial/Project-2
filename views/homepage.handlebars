@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../public/css/homepage.css"/>
+    <link rel="stylesheet" href="../public/css/homepage.css" />
     <title>HomePage</title>
   </head>
   <body>
@@ -20,41 +20,45 @@
         </p>
       </div>
       <div class="howToSignUp">
-        <div class="card" id="signUpCard">
+        <div class="cardd" id="signUpCard">
           <p>Sign Up!</p>
           <br />
           <a href="/login">
             <i class="fa-solid fa-user" style="color: #67866b"></i>
           </a>
         </div>
-        <div class="card" id="makeAlistCard">
+        <div class="cardd" id="makeAlistCard">
           <p>Make a List!</p>
           <br />
-          <i class="fa-solid fa-scroll" style="color:#67866b"></i>
+          <a href="/login">
+            <i class="fa-solid fa-scroll" style="color:#67866b"></i>
+          </a>
         </div>
-        <div class="card" id="getMatchedCard">
+        <div class="cardd" id="getMatchedCard">
           <p>Get Matched!</p>
           <br />
-          <i class="fa-solid fa-gift" style="color: #67866b"></i>
+          <a href="/login">
+            <i class="fa-solid fa-gift" style="color: #67866b"></i></a>
         </div>
       </div>
       <div class="usersRendered">
         <div class="aboveTextUsers">
           <p>
-            Meet your Secret Santa Crew! 
+            Meet your Secret Santa Crew!
           </p>
         </div>
         <div class="usersGoHere">
-     
+
           {{#each users as |user index|}}
-         
-          <div class="users">
-          <a href="/profile/{{user.name}}">
-            <i class="fa-solid fa-candy-cane" style="color: #e20303;"></i> <span>{{user.name}}</span>
-            </a>
+
+            <div class="users">
+              <a href="/profile/{{user.name}}">
+                <i class="fa-solid fa-candy-cane" style="color: #e20303;"></i>
+                <span>{{user.name}}</span>
+              </a>
             </div>
           {{/each}}
-      
+
         </div>
       </div>
     </div>

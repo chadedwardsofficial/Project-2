@@ -58,6 +58,81 @@
       "name": "Sonique",
       "email": "josedddph@aol.com",
       "password": "password123435"
+    },
+    {
+      "name": "John",
+      "email": "john@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Emma",
+      "email": "emma@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Oliver",
+      "email": "oliver@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Sophia",
+      "email": "sophia@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Liam",
+      "email": "liam@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Mia",
+      "email": "mia@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Elijah",
+      "email": "elijah@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Ava",
+      "email": "ava@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Lucas",
+      "email": "lucas@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Isabella",
+      "email": "isabella@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Mason",
+      "email": "mason@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Harper",
+      "email": "harper@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Ethan",
+      "email": "ethan@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Aria",
+      "email": "aria@example.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Logan",
+      "email": "logan@example.com",
+      "password": "password12345"
     }
   ]
   

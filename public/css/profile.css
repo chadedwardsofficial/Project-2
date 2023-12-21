@@ -2,50 +2,135 @@ body {
     font-family:  'Rouge Script', cursive;
     margin: 0;
     padding: 0;
-    /* display: flex; */
     height: 100vh;
-    /* background-color: #cadcd6;  */
+
 }
-h5, h6{
+h1{
+   font-size: 5rem; 
+}
+
+h2{
+font-size: 3.0rem;
+margin: 0;
+    padding: 0;
     color: #f4d5a9;
 }
+h3 {
+    text-align: center;
+}
+h4{
+    color: #f4d5a9; 
+    margin: 3rem;
+}
+h5, h6{
+    color: #f4b6a9;
+    font-family: 'marck-script', cursive;
+    
+}
+
+.red-text{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+}
+
 .profile-container,
 .form,
 .card-container {
     text-align: start;
-    padding: 20px;
+    padding: 25px;
     background-color: #305f47; 
     max-width: fit-content;
     margin: 10px;
     border-radius: 8px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-.login-form, .signup-form{
-    
+.loginCard{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.signupCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 30px;
+   
+   
+}
+.wishlist {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profileCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 30px;
+   
 }
 
 #loginButton{
     justify-content: space-between;
     
 }
-
+.no-button{
+    color: #a73030;
+    font-family: 'marck-script', cursive;
+}
 
 #name {
     color: #ffffff; 
+    font-size: 4rem;
 }
 
 
-#description,
-#allergies,
+.itemForm{
+    text-align: center;
+    color:#f3e9da;
+    font-size: 1.75rem;
+}
+.items{
+    color: #f4d5a9;
+    font-family: 'marck-script', cursive;
+   
+}
+.itemList{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+}
+
+/* .form-group {
+    display: flex;
+    justify-content: center;
+} */
+
 .form-input,
 .card-description {
-    color: rgb(97, 97, 97);
+    color: #000000;
     font-style: italic;
     cursor: text;
     text-align: start;
+    font-family: 'marck-script', cursive;
     
+}
+
+.itemsForm{
+    font-size: 1rem;
 }
 
 .btn,
@@ -64,6 +149,22 @@ h5, h6{
     margin: 45px 0px;
 }
 
+.modal-content, #personID{
+    font-size: larger;
+}
+.personID{
+    font-size: x-large;
+}
+
+.btn{
+    font-family: 'marck-script', cursive;
+}
+
+.btn-flat{
+    font-family: 'marck-script', cursive;
+}
+
+
 .btn:disabled,
 .btn-primary:disabled {
     opacity: 0.5; 
@@ -72,12 +173,16 @@ h5, h6{
 
 label {
     cursor: pointer;
-    color: #faf0e3;
+    color: #000000;
     display: block;
     padding: 10px;
     margin: 3px;
+    text-align: center;
+    font-size: 40px;
 }
-
+.renderedChosenName {
+    text-align: center;
+}
 /* .card4 {
     background-color: #c64c4c;
     border-radius: 8px;
@@ -96,8 +201,42 @@ label {
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #ffecec; 
+}
+.userPageName {
+    font-size: 5em; 
+}
+
+.list h2 {
+    font-size: 3.5em;
+    padding: 2rem;
+    color: #a73030;
+}
+
+
+.list ul {
+    list-style:none;
+    padding: 25px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    background-color: #f5f5f5;
+    border: 1px solid #f4d5a9;
+    border-radius: 8px;
+    margin: 15px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 25px;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .modal {
@@ -120,6 +259,19 @@ label {
     justify-content: flex-start; 
 }
 
+ul li:before {    
+    font-family: 'FontAwesome';
+    content: '\f06b';
+    margin:0 5px 0 -25px;
+    color: #e35d5d;
+}
+h5 {
+    font-size: 35px;
+    font-family:  'Rouge Script', cursive;
+    text-align: center;
+}
+
+
 @media (max-width: 600px) {
     body {
         font-family:  'Rouge Script', cursive;
@@ -129,5 +281,11 @@ label {
         flex-direction: column; /* column layout for small screens */
         height: 100vh; 
         background-color: #96AFAD; 
+    }
+    .red-text{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-around;
     }
 }
