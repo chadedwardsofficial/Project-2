@@ -25,6 +25,13 @@ h5, h6{
     
 }
 
+.red-text{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+}
+
 .profile-container,
 .form,
 .card-container {
@@ -34,7 +41,8 @@ h5, h6{
     max-width: fit-content;
     margin: 10px;
     border-radius: 8px;
-   
+    display: flex;
+   flex-direction: column;
 }
 
 .loginCard{
@@ -92,6 +100,9 @@ h5, h6{
 }
 .itemList{
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
 }
 
 
@@ -249,5 +260,11 @@ ul li:before {
         flex-direction: column; /* column layout for small screens */
         height: 100vh; 
         background-color: #96AFAD; 
+    }
+    .red-text{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-around;
     }
 }
