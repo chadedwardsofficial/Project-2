@@ -37,7 +37,7 @@ To run this project, follow the following steps:
 1. clone this repository :
     * `git clone git@github.com:chadedwardsofficial/Secret-Santa.git`
 2. Once cloned, be sure to create a `.env`  file. This is were you will provide your User and Password for your MySQL account. Make sure it looks like the following:
-	```
+```
 DB_NAME=’secretsanta_db'
 DB_PASSWORD='[enter your mysql password here]'
 DB_USER='root'
