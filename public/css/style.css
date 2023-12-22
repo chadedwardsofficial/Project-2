@@ -3,6 +3,7 @@
 .navbarHeader {
   display: flex;
   justify-content: center;
+  
   font-family: "Rouge Script", cursive;
   color: #c31717; /* Muted Red for the title */
 }
@@ -18,7 +19,6 @@
   position:relative;
   justify-content: center;
   justify-content:space-between;
-
   font-family: 'Rouge Script', cursive;
   overflow: hidden;
   padding-left: 10px;
