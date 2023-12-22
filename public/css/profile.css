@@ -149,7 +149,8 @@ h5, h6{
     margin: 45px 0px;
 }
 
-.modal-content, #personID{
+.modal-content {
+    text-align: center;
     font-size: larger;
 }
 .personID{
@@ -259,12 +260,9 @@ label {
     justify-content: flex-start; 
 }
 
-ul li:before {    
-    font-family: 'FontAwesome';
-    content: '\f06b';
-    margin:0 5px 0 -25px;
-    color: #e35d5d;
-}
+
+
+
 h5 {
     font-size: 35px;
     font-family:  'Rouge Script', cursive;
