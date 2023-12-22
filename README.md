@@ -36,19 +36,25 @@
 To run this project, follow the following steps: 
 1. clone this repository :
     * `git clone git@github.com:chadedwardsofficial/Secret-Santa.git`
-2. Once cloned, open your terminal and run the following lines in order:
-    1. `npm i` to install all packages used
-    2. `mysql -u - root  -p` and type in your password for mysql 
-    3. `source ./db/schema.sql`. Be sure to be in the correct folder to run your schema, if already in your db folder then type `source schema.sql`.
-    4. `Exit` to exit out of mysql.
-    5. `Npm run seed` to seed the initial data into the database. 
-    6. `Npm start` to initiate the application.
-3. Once you have the code running, you will be able to open the application through the designated localhost:3001 
-4. Once at the homepage you should be able to click the login button located on the top left hand side.  From here you should be able to either log in to your account or be able to create an account. 
-5. Once logged in/ have created your account, you are able to click the `Chosen Person` button that will generate your chosen person for secret Santa. Once closing the modal, your profile page should update to tell you who is your chosen person. 
-6. If you want to add items to your wishlist, enter the items name under the title `Item Name` and once done typing, click ` Add Item` to save your item to your wishlist. 
-7. To be able to view your chosen persons wishlist, head back to the homepage by clicking the `Secret Santa` title and in the bottom there should be a list of names. Click on your selected persons name and you will be redirected to their wishlist page. 
-8. Have fun and enjoy your Secret Santa experience! 
+2. Once cloned, be sure to create a `.env`  file. This is were you will provide your User and Password for your MySQL account. Make sure it looks like the following:
+	```
+DB_NAME=’secretsanta_db'
+DB_PASSWORD='[enter your mysql password here]'
+DB_USER='root'
+```
+3. Open your terminal and run the following lines in order:
+    1. npm I to install all packages used
+    2. mysql -u - root  -p and type in your password for mysql 
+    3. source ./db/schema.sql. Be sure to be in the correct folder to run your schema, if already in your db folder then type source schema.sql.
+    4. Exit to exit out of mysql.
+    5. Npm run seed to seed the initial data into the database. 
+    6. Npm start to initiate the application.
+4. Once you have the code running, you will be able to open the application through the designated localhost:3001 
+5. Once at the homepage you should be able to click the login button located on the top left hand side.  From here you should be able to either log in to your account or be able to create an account. 
+6. Once logged in/ have created your account, you are able to click the “chosen person” button that will generate your chosen person for secret Santa. Once closing the modal, your profile page should update to tell you who is your chosen person. 
+7. If you want to add items to your wishlist, enter the items name under the title “item name” and once done typing, click “Add Item” to save your item to your wishlist. 
+8. To be able to view your chosen persons wishlist, head back to the homepage by clicking the “secret Santa” title and in the bottom there should be a list of names. Click on your selected persons name and you will be redirected to their wishlist page. 
+9. Have fun and enjoy your Secret Santa experience! 
 
 
   ## Credits
